@@ -7,7 +7,25 @@ const notes             =require("./notes");
 //DESTRUCTURING OBJECT
 var {addNote, deleteNote,getNote,getAll}=notes;
 // YARGS VARIABLE
-const argv = yargs.argv;
+
+var title = {
+    describe:'title of note',
+    demand:true,
+    alias:'t'
+  }
+var body = {
+    describe:'body of note',
+    demand:true,
+    alias:'b'
+  }
+
+const argv = yargs
+.command('add', 'add a new note',{title,body})
+.command('delete', 'delete a note',{title})
+.command('get', 'get a note',{title})
+.command('list','list all the notes')
+.help()
+.argv;
 //
 // console.log(argv.title,argv.body)
 var command=argv._[0]
