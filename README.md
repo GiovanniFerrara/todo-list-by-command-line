@@ -43,7 +43,7 @@ node app.js list
 
  Built With
 
-* [Yargs]( https://nodejs.org/it/) JavaScript runtime
+* [Node]( https://nodejs.org/it/) JavaScript runtime
 * [Yargs](https://www.npmjs.com/package/yargs) - NPM Dependency 
 
 ## Version 1
