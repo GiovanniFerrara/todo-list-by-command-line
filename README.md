@@ -53,5 +53,5 @@ node app.js list
 * **Giovanni Ferrara* - [Linkedin Profile](https://www.linkedin.com/in/giovanni-marco-ferrara-6aa458137/)
 
 ## License
-WTFPL
+MIT
 
